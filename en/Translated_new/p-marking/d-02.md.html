@@ -1,0 +1,84 @@
+<h1>The &quot;Change Circuit&quot; command</h1>
+<p><strong>Purpose:</strong> changing elements marks in existing circuit is applied if:</p>
+<ul>
+<li>you need to use another mark format;</li>
+<li>you need to change the values for parameters that influence the marks.</li>
+</ul>
+<p align='center'>
+<img alt='Рис. 1. Запуск команды «Изменение цепи»' src='/upload/en/Translated_new/p-marking/d-02-img/d-02-01.png' />
+<br/>
+Fig. 1. Launching the "Change Circuit" command
+</p>
+ <p style="text-indent: 15px; line-height: 1 em;"> To run the command, click the "Change Circuit" button in the "Actions with Circuits" group on the "Marking" panel of the "3D Security Designer" tab. If no circuits have been created in the current document before, a window will be displayed informing the user about this. </p>
+<p align='center'>
+<img alt='Рис. 2. Предупреждение об отсутствии цепей' src='/upload/en/Translated_new/p-marking/d-02-img/d-02-02.png' />
+<br/>
+Fig. 2. Warning about the absence of circuits
+</p>
+ <p style="text-indent: 15px; line-height: 1 em;"> Otherwise, the window "Change Marks in Existing Circuit" will be displayed. </p>
+<p align='center'>
+<img alt='Рис. 3. Окно «Изменение маркировки в существующей цепи»' src='/upload/en/Translated_new/p-marking/d-02-img/d-02-03.png' />
+<br/>
+Fig. 3. Window "Change Marks in Existing Circuit"
+</p>
+ <p style="text-indent: 15px; line-height: 1 em;">The window control elements are responsible for the following functionality: </p>
+<ol>
+<li><p>The &quot;Circuit Name&quot; drop-down list allows you to select one of the circuits previously created in the document to change it.</p>
+</li>
+<li><p>The string representation &quot;Circuit Mark Format&quot; gives an idea of the mark appearance. The string contains the name and format structure separated by a colon.</p>
+</li>
+<li><p>The button &quot;Information on Existing Circuits&quot; allows you to open a window reflecting information about marked circuits in the document.</p>
+</li>
+<li><p>The &quot;Format Selection&quot; drop-down list allows you to select one of the formats previously created in the document for the circuit that is changed.</p>
+</li>
+<li><p>The &quot;Create Format&quot; button allows you to open a window to create a new format in the document for the circuit that is changed.</p>
+</li>
+<li><p>A list containing &quot;Parameter&quot; - &quot;Value&quot; pairs set by the user. These parameters include:</p>
+</li>
+</ol>
+<ul>
+<li>&quot;Circuit name&quot;, the value of this parameter is entered by the user and must be unique within the document.</li>
+<li>Other user parameters provided by the selected mark format. The values of these fields are not subject to uniqueness requirements.</li>
+</ul>
+ <p style="text-indent: 15px; line-height: 1 em;"> The values for the above parameters can be changed by the user. If the mark format has been changed, then for parameters with the same names, the values are transferred so that they do not have to be entered again. </p>
+<ol start="7">
+<li><p>If the &quot;Mark Embedded Elements&quot; checkbox is selected, then the embedded families are marked. At the same time, embedded families should be &quot;General&quot; with respect to the parent family, have a specific category and be adapted to work with the 3D Security Designer add-in.</p>
+</li>
+<li><p>If the &quot;Visualize Marks&quot; checkbox is selected, the mark is visualized in accordance with the visualization settings.</p>
+</li>
+<li><p>If the &quot;Delete Alternative Marks&quot; checkbox is selected, then when marking an element (family) the value of the parameter (if it was previously set) of the alternative mark will be deleted.</p>
+</li>
+<li><p>If the check box &quot;Count Addresses in Elements&quot; is selected, then in the process of marking when forming the counter, the value of the parameter containing the number of addresses will be taken into account (if the device is addressable).</p>
+</li>
+<li><p>The button &quot;Customize Mark Visualization&quot; allows you to open a window for configuring the visualization.</p>
+</li>
+<li><p>The &quot;Change Marks&quot; button starts the process of changing marks for the existing circuit. The button is active only if the values for all parameters listed in paragraph 3 are filled in.</p>
+</li>
+<li><p>The &quot;Cancel&quot; button cancels the &quot;Change Circuit&quot; command and closes the &quot;Change Marks in Existing Circuit&quot; window.</p>
+</li>
+</ol>
+ <p style="text-indent: 15px; line-height: 1 em;"> After setting up the logic of the "Change Circuit" command in the "Change Marks in Existing Circuit" window and clicking the "Change Marks" button, the process of changing marks of the previously selected circuit starts in accordance with the specified settings. If an alternative mark has been set for any elements in the circuit, then it will take precedence during visualization. </p>
+ <p style="text-indent: 15px; line-height: 1 em;"> The operation of the "Change Circuit" command</p>
+<p align='center'>
+<img alt='Рис. 4. До выполнения команды «Изменение цепи»' src='/upload/en/Translated_new/p-marking/d-02-img/d-02-04.png' />
+<br/>
+Fig. 4. Before executing the "Change Circuit" command
+</p>
+<p align='center'>
+<img alt='Рис. 5. Результат выполнения команды «Изменение цепи» с учетом ранее сделанных настроек в окне «Изменение маркировки в существующей цепи»' src='/upload/en/Translated_new/p-marking/d-02-img/d-02-05.png' />
+<br/>
+Fig. 5. The result of executing the "Change Circuit" command, taking into account previously made settings in the "Change Marks in Existing Circuit" window
+</p>
+ <p style="text-indent: 15px; line-height: 1 em;"> The following ambiguities are possible when working with the "Change Circuit" command: </p>
+ <p style="text-indent: 15px; line-height: 1 em;"> If in the process of changing the circuit, the number of elements in the circuit has exceeded the number provided by the changed mark format, then the corresponding information window will be displayed, determining the user's further actions. At the same time, information about the number of actual elements in the changeable circuit and the maximum number of elements determined by the selected mark format will appear in the window, and the visual representation of the marking of the changeable circuit will automatically change (if visualization for it was provided earlier) in accordance with the last settings made in the "Customize Mark Visualization" window. </p>
+<p align='center'>
+<img alt='Рис. 6. Устранение коллизии' src='/upload/en/Translated_new/p-marking/d-02-img/d-02-06.png' />
+<br/>
+Fig. 6. Elimination of the collision
+</p>
+ <p style="text-indent: 15px; line-height: 1 em;"> In case of a command failure, a corresponding message will be displayed, while there will be no change in the marking of the circuit. </p>
+<p align='center'>
+<img alt='Рис. 7. Сообщение о сбое' src='/upload/en/Translated_new/p-marking/d-02-img/d-02-07.png' />
+<br/>
+Fig. 7. Failure message
+</p>

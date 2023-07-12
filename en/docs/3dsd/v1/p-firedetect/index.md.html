@@ -1,0 +1,55 @@
+<h1>The &quot;Fire Detectors&quot; panel</h1>
+<p><strong>Purpose:</strong> the &quot;Fire Detectors&quot; panel is intended for:</p>
+<ul>
+<li><p>Selection of the category of equipment (fire detectors, control devices, power supplies, modules and components).</p>
+</li>
+<li><p>Search for the required BIM models (families) in accordance with the specified criteria.</p>
+</li>
+<li><p>Getting information about the found BIM models (families) (manufacturer, developer, LOD, type sizes, etc.)</p>
+</li>
+<li><p>Selection of the required BIM models (families) based on the results of the analysis.</p>
+</li>
+<li><p>Uploading and/or inserting selected BIM models (families) into the current Autodesk Revit document.</p>
+</li>
+</ul>
+<p align='center'>
+<img alt='Fire Detect 2' src='/upload/en/docs/3dsd/v1/p-firedetect/index-img/fire-detect-2.png' />
+<br/>
+Fig. 1. View of the "Fire Detectors" panel
+</p>
+<h2>Terminology</h2>
+<p>For an unambiguous understanding of the principles of operation and the user interface of the add-in, it is necessary to understand in what sense the following terms are used.</p>
+<p><em>BIM-model (building information model)</em> is an object-oriented parametric 3D model that digitally represents the physical, functional and other characteristics of the product (or its individual parts) as a set of information-rich elements.</p>
+<p><em>BIM-model search</em> is the process of searching the database for the requested BIM model in accordance with certain search criteria.</p>
+<p><em>BIM-model search criteria</em> is a set of parameter values that the requested in the database BIM model must satisfy. Parameter values are set by selecting or entering in the interface elements of the dialog box.</p>
+<p><em>BIM-model selection</em> is the process of selecting the required BIM models by the user from the BIM models found in the database. The selection is made for subsequent loading and/or insertion by highlighting the names of BIM models and/or their type sizes in the interface elements of the dialog box.</p>
+<p><em>Uploading BIM-models</em> is the process of uploading BIM models to the current Autodesk Revit document. The download starts after clicking the corresponding button in the dialog box.</p>
+<p><em>BIM-model Insertion</em> is the process of inserting one of the selected BIM model (or type size) into the current Autodesk Revit document. The BIM model (or type size) is selected in the interface element of the dialog box.</p>
+<p><em>Family</em> is a group of similar elements that is characterized by a common set of properties and related graphical representations. Each family belongs to one specific category and receives a set of primary parameters from the category. The remaining parameters are set by the user (if necessary).</p>
+<p><em>Embedded family</em> is a downloadable family that is used inside another family with the ability to install dependencies, but without taking into account the specifications.</p>
+<p><em>General family</em> is a embedded family with the possibility of marking in the project and accounting in the specifications in the project.</p>
+<p><em>Type size</em> is a named set of parameter values.</p>
+<p><em>LOD (level of development)</em> is the level of elaboration which determines the completeness of the elaboration of the BIM model element. The level of elaboration sets the minimum amount of geometric, spatial, quantitative, as well as any attribute information necessary to solve modeling problems at a specific stage of the life cycle of a construction object.</p>
+<p><em>Family category</em> is a group of elements used to model a construction object: fire alarms, devices for calling and alerting, windows, doors, walls, ceilings, etc.</p>
+<p><em>Collision</em> is a logical, geometric or physical contradiction (or ambiguity) in the user's instructions, making it impossible to implement these instructions. Before implementing the instructions, the elimination of collisions is required.</p>
+<h2>Commands of the &quot;Fire Detectors&quot; panel</h2>
+<p>The &quot;Fire Detectors&quot; panel provides commands for performing the following actions:</p>
+<ul>
+<li>Searching, selection, loading and/or insertion of BIM models (families) of smoke detectors into the project.</li>
+<li>Searching, selection, loading and/or insertion of BIM models (families) of temperature detectors into the project.</li>
+<li>Searching, selection, loading and/or insertion of BIM models (families) of manual call points into the project.</li>
+<li>Searching, selection, loading and/or insertion of BIM models (families) of flame detectors into the project.</li>
+<li>Searching, selection, loading and/or insertion of BIM models (families) of fire alarm control panels into the project.</li>
+<li>Searching, selection, loading and/or insertion of BIM models (families) of fire alarm power supplies into the project.</li>
+<li>Searching, selection, loading and/or insertion of BIM models (families) of fire alarm modules and components into the project.</li>
+</ul>
+<h2>Note</h2>
+<p>In the process of working with categories of equipment, when searching for BIM models (families) contained in the database, the following situations may occur:</p>
+<ol>
+<li>Some equipment may belong to different categories of the &quot;Fire Detectors&quot; panel. Accordingly, this must be taken into account when searching for the required BIM model (family).</li>
+</ol>
+ <p style="text-indent: 15px; line-height: 1 em;"> <b>Example:</b> The «ARBM_Извещатель_КомбинированныйРадиоканальный_АРГУС-СПЕКТР_Аврора-ДТ-ПРО_L2_Ru_11.rfa» family  models a combined radio-channel fire detector (heat + smoke). Accordingly, this family can be included in the sample result both when searching for BIM models (families) of smoke detectors and when searching for BIM models (families) of heat fire detectors. </p>
+<ol start="2">
+<li>Some equipment may belong to different categories related to the &quot;Fire Alarm&quot; and &quot;Fire Detectors&quot; panels. Accordingly, this must be taken into account when searching for the required BIM model (family).</li>
+</ol>
+ <p style="text-indent: 15px; line-height: 1 em;"> <b>Example:</b> The «ARBM_Контроллер_РадиоканальныйУстройств_АРГУС-СПЕКТР_Табло-РР-ПРО_L4_Ru_11.rfa» family models a fire alarm light radio channel, which contains a radio channel controller (hereinafter called as RR), designed to increase the range of the ISS radio channel. Accordingly, this family can be included in the sample result both when searching for BIM models (families) of fire alarms, and when searching for BIM models (families) of modules and components from the "Fire Alarm" panel, as well as when searching for BIM models (families) of modules and components from the "Fire Detectors" panel. </p>

@@ -1,0 +1,70 @@
+<h1>The &quot;Alternative Mark&quot; command</h1>
+<p><strong>Purpose:</strong> enable the user to manually set an alternative mark value for an element (family) in the circuit. Alternative mark is not bound by the limitations of the format adopted for the circuit elements, and takes precedence when visualizing. The original mark of the element is saved and automatically becomes visible when the value of alternative mark is removed.</p>
+<p align='center'>
+<img alt='D 07 01' src='/upload/en/Translated_new/p-marking/d-07-img/d-07-01.png' />
+<br/>
+Fig. 1. Launching the "Alternative Mark" command
+</p>
+<p style="text-indent: 15px; line-height: 1 em;"> To run the command, click the "Alternative Mark" button in the "Actions with Single Elements" group on the "Marking" panel of the "3D Security Designer" tab. If no circuits have been created in the current document before, a window will be displayed informing the user about this </p>
+<p align='center'>
+<img alt='D 07 02' src='/upload/en/Translated_new/p-marking/d-07-img/d-07-02.png' />
+<br/>
+Fig. 2. Warning about the absence of circuits
+</p>
+<p style="text-indent: 15px; line-height: 1 em;"> Otherwise, the "Alternative Mark" window will be displayed. </p>
+<p align='center'>
+<img alt='D 07 03' src='/upload/en/Translated_new/p-marking/d-07-img/d-07-03.png' />
+<br/>
+Fig. 3. The "Alternative Mark" window
+</p>
+<p style="text-indent: 15px; line-height: 1 em;"> The window control elements are responsible for the following functionality: </p>
+<ol>
+<li>The text field &quot;Alt. Mark Value&quot; allows you to set a value for alternative mark of an element (family) in the circuit. The value cannot exceed more than ten characters (including space characters). The space characters are removed at the beginning and the end of the alternative mark line. An empty value for alternative mark means that the alternative mark will be removed.</li>
+<li>If the &quot;For Single Element&quot; checkbox is selected, the value of alternative mark will be set for only one element (family) in the circuit. Otherwise, the same value of the alternative mark will be used for several elements in the circuit.</li>
+<li>The &quot;Apply&quot; button starts the installation of alternative mark for the selected elements (families) in the circuits.</li>
+<li>The &quot;Cancel&quot; button cancels the &quot;Alternative Mark&quot; command and closes the &quot;Alternative Mark&quot; window.</li>
+</ol>
+<p style="text-indent: 15px; line-height: 1 em;"> After setting up the logic of the "Alternative Mark" command and clicking the "Apply" button, the setting of alternative mark values for the selected elements (families) in the circuits is started. </p>
+<p style="text-indent: 15px; line-height: 1 em;"> The status bar will prompt "Select element in the circuit for which you want to set alternative mark value". The ability to select multiple items depends on the value of the "For one element" checkbox. </p>
+<p style="text-indent: 15px; line-height: 1 em;"> The operation of the command: </p>
+<ul>
+<li>If the &quot;Alt. Mark Value&quot; is not set, and the selected item doesn't have alternative mark, then nothing will happen.</li>
+<li>If the &quot;Alt. Mark Value&quot; is not set, and the selected element has alternative mark, a warning about overwriting will be displayed.</li>
+</ul>
+<p align='center'>
+<img alt='D 07 04' src='/upload/en/Translated_new/p-marking/d-07-img/d-07-04.png' />
+<br/>
+Fig. 4. Warning about overwriting alternative mark
+</p>
+<p style="text-indent: 15px; line-height: 1 em;"> If the answer is "Yes", the value of alternative mark will be deleted. When the alternative mark is removed, the marking corresponding to the mark format for the circuit will be visualized.
+If the "Alt. Mark Value" is set, and the selected element doesn't have alternative mark, then it will be set. The value of alternative mark will be visualized automatically. </p>
+<p style="text-indent: 15px; line-height: 1 em;"> If the "Alt. Mark Value" is set, and the selected element has alternative mark, a warning about overwriting will be displayed. </p>
+<p align='center'>
+<img alt='D 07 05' src='/upload/en/Translated_new/p-marking/d-07-img/d-07-05.png' />
+<br/>
+Fig. 5. Warning about overwriting alternative mark
+</p>
+<p style="text-indent: 15px; line-height: 1 em;"> If the answer is "Yes", the value of alternative mark will be overwritten. The new value of alternative mark will be visualized automatically. </p>
+<p style="text-indent: 15px; line-height: 1 em;"> The operation of the "Alternative Mark" command: </p>
+<p align='center'>
+<img alt='D 07 06' src='/upload/en/Translated_new/p-marking/d-07-img/d-07-06.png' />
+<br/>
+Fig. 6. Before executing the "Alternative Mark" command
+</p>
+<p align='center'>
+<img alt='D 07 07' src='/upload/en/Translated_new/p-marking/d-07-img/d-07-07.png' />
+<br/>
+Fig. 7. Request to select an element when the "For Single Element" checkbox is selected.
+</p>
+<p style="text-indent: 15px; line-height: 1 em;"> Setting alternative mark for the element previously marked as «1.ВТН.2.04» </p>
+<p align='center'>
+<img alt='D 07 08' src='/upload/en/Translated_new/p-marking/d-07-img/d-07-08.png' />
+<br/>
+Fig. 8. The result of executing the "Alternative Mark" command
+</p>
+<p style="text-indent: 15px; line-height: 1 em;"> If the command fails, a corresponding message will be displayed, while setting the value of alternative mark for the element in the circuit will not occur. </p>
+<p align='center'>
+<img alt='D 07 09' src='/upload/en/Translated_new/p-marking/d-07-img/d-07-09.png' />
+<br/>
+Fig. 9. Failure message
+</p>
